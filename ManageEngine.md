@@ -1,24 +1,24 @@
 ### Quick Start Guide: High Availability for ManageEngine ServiceDesk using EXPRESSCLUSTER
 
-## Table of Contents
-
-1. [Introduction](#1-introduction)
-2. [Prerequisites](#2-prerequisites)
-   1. [Minimum Requirements for ManageEngine](#21-minimum-requirements-for-manageengine)
-   2. [System Requirements for EXPRESSCLUSTER on Windows](#22-system-requirements-for-expresscluster-on-windows)
-3. [Installation Steps](#3-installation-steps)
-   1. [Install ManageEngine ServiceDesk](#31-install-manageengine-servicedesk)
-   2. [Install EXPRESSCLUSTER](#32-install-expresscluster)
-   3. [Cluster System Configuration](#33-cluster-system-configuration)
-4. [Cluster Configuration](#4-cluster-configuration)
-   1. [Configuring ManageEngine for High Availability](#41-configuring-manageengine-for-high-availability)
-     1. [Initial Setup on Primary Server](#411-initial-setup-on-primary-server)
-     2. [Move the Database to Mirror Disk (E:/ Drive)](#412-move-the-database-to-mirror-disk-e-drive)
-     3. [Prepare Secondary Server for Failover](#413-prepare-secondary-server-for-failover)
-     4. [Failover Testing](#414-failover-testing)
-     5. [Add Application Resource to EXPRESSCLUSTER](#415-add-application-resource-to-expresscluster)
-     6. [Adding Process Name Monitor](#416-adding-process-name-monitor)
-     7. [Adding PostgreSQL Monitor](#417-adding-postgresql-monitor)
+> **Table of Contents**
+> 
+> 1. [Introduction](#introduction)
+> 2. [Prerequisites](#prerequisites)
+>    1. [Minimum Requirements for ManageEngine](#minimum-requirements-for-manageengine)
+>    2. [System Requirements for EXPRESSCLUSTER on Windows](#system-requirements-for-expresscluster-on-windows)
+> 3. [Installation Steps](#installation-steps)
+>    1. [Install ManageEngine ServiceDesk](#install-manageengine-servicedesk)
+>    2. [Install EXPRESSCLUSTER](#install-expresscluster)
+> 4. [Cluster System Configuration](#cluster-system-configuration)
+> 5. [Cluster Configuration](#cluster-configuration)
+>    1. [Basic Cluster Setup](#basic-cluster-setup)
+> 6. [Configuring ManageEngine for High Availability](#configuring-manageengine-for-high-availability)
+>    1. [Initial Setup on Primary Server](#initial-setup-on-primary-server)
+>    2. [Prepare Secondary Server for Failover](#prepare-secondary-server-for-failover)
+> 7. [Failover Testing](#failover-testing)
+> 8. [Add Application Resource to EXPRESSCLUSTER](#add-application-resource-to-expresscluster)
+> 9. [Adding Process Name Monitor](#adding-process-name-monitor)
+> 10. [Adding PostgreSQL Monitor](#adding-postgresql-monitor)
 
 ## Introduction
 This guide provides step-by-step instructions to set up a high-availability (HA) cluster for ManageEngine ServiceDesk Plus MSP using NEC EXPRESSCLUSTER on Windows.
