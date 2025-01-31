@@ -19,6 +19,7 @@
 > 8. [Add Application Resource to EXPRESSCLUSTER](#add-application-resource-to-expresscluster)
 > 9. [Adding Process Name Monitor](#adding-process-name-monitor)
 > 10. [Adding PostgreSQL Monitor](#adding-postgresql-monitor)
+> 11. [Failover testing](#failover-testing)
 
 
 ## Introduction
@@ -140,3 +141,10 @@ Set up a basic cluster with Mirror Disk and FIP resources by following this guid
      - Set **Recovery Action** to `Executing Failover`.
      - Set **Recovery Target** to `ME-services`.
    - Apply the settings and finish.
+
+8. **Failover testing**
+   - Open Manage engine webconsole using FIP address
+   - Create a new ticket on active server(where the failover is running).
+   - Failover the failover group to standby server:
+     - Check dashboard if the ticket is visible there!!.
+
